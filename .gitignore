@@ -1,0 +1,8 @@
+# PROS Build Artifacts
+output/
+bin/
+*.o
+*.elf
+*.hex
+.vscode/
+*.swp
