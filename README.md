@@ -32,10 +32,10 @@ During driver control, each d-pad or face button press appends one plain-text
 **token** to `/usd/replay.txt` on the SD card:
 
 ```
-↑ UP pressed  →  MOVE_POSE_FWD 12.00 24.00 90.00
-↓ DOWN pressed →  MOVE_POSE_BWD 0.00  0.00  180.00
-← LEFT pressed →  TURN_TO 45.00
-→ RIGHT pressed → INTAKE_STATE 1 0 0 0
+↑ UP pressed  →  MOVE_POSE_FWD (x y theta)
+↓ DOWN pressed →  MOVE_POSE_BWD (x y theta)
+← LEFT pressed →  TURN_TO (heading)
+→ RIGHT pressed → INTAKE_STATE (whatever state is currently active)
 B pressed      →  SCRAPER_TOGGLE
 Y pressed      →  WING_TOGGLE
 ```
@@ -68,8 +68,8 @@ a handful of button presses.
 
 ## Hardware Setup
 
-Update the port constants near the top of
-[`src/main.cpp`](src/main.cpp) to match your robot before uploading.
+**Update the port constants near the top of**
+**[`src/main.cpp`](src/main.cpp) to match your robot before uploading.**
 
 **Motor ports**
 
