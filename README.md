@@ -260,17 +260,17 @@ the card with a card reader before the next driver-control run.
 1. Allow up to 8 archive files on the sd card, allowing multiple match autons
    being stored on the sd card at once. This could then be integrated with a
    potentiometer for a very streamlined workflow at competitions.
-2. Put sections of the (`main.cpp`) fiules into other files using headers to
+2. Put sections of the `main.cpp` files into other files using headers to
    improve readability and debugging speed.
 3. Add a PID which can automatically tune itself, to further streamline match
    setup, and ensure that one can code a well-functioning auton FULLY at the
    competition.
-4. Add a timer function to encure that the (`.set_timeout`) in LemLib stays
+4. Add a timer function to encure that the `.set_timeout` in LemLib stays
    minimised, hence allowing the creation of faster autonomous codes directly
    at competitions.
 5. (REACH) I am also working on a personal project of creating an algo which
    record the position of the robot continuously, hence generating a LemLib
-   (`PATH.txt`) file. This would allow the accurate recording of curves during
+   `PATH.txt` file. This would allow the accurate recording of curves during
    driving, hence making instant autonomous programs even stronger.
 
 PLEASE feel free to contribute to this project via forks and Pull Requests...
